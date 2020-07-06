@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/gh.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+            <h1 class="mb-3 bread">IT4GH</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="{% url 'services' %}">Programms <i class="fa fa-chevron-right"></i></a></span> <span>IT4GH <i class="fa fa-chevron-right"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="ftco-section2">
+
+	<section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(../static/images/about2.jpg);">
+					</div>
+					<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+	          <div class="heading-section">
+	            <h2 class="mb-4">After School Code Club.</h2>
+
+                <p>We organize teacher training and support for volunteers and educators to run free, extra-curricular coding clubs for children. Clubs can be run from a range of venues, from schools, libraries, to community centers.</p>
+                <p><a href="#" class="btn btn-primary py-3 px-4">Apply </a></p>
+              </div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+</section>
+
+<section class="ftco-section2">
+
+	<section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(../static/images/about3.jpg);">
+					</div>
+					<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+	          <div class="heading-section">
+	            <h2 class="mb-4">Weekend School.</h2>
+
+                <p>The goal of this weekend school for kids between 5-12 is to increase reading skills , fluency with computational thinking and programming concepts.</p>
+                <p><a href="#" class="btn btn-primary py-3 px-4">Join us</a></p>
+              </div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+</section>
+
+
+{% endblock content %}

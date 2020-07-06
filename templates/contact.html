@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5"
+         style="background-image: url('../static/images/bg_2.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate mb-5 text-center">
+                <h1 class="mb-3 bread">Contact Us</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i
+                        class="fa fa-chevron-right"></i></a></span> <span>Contact  <i
+                        class="fa fa-chevron-right"></i></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if message_name %}
+<center>
+    <h2>Thanks {{ message_name }} !</h2>
+    <p>We have recieved your Email</p>
+</center>
+<br/><br/><br/>
+ {% else %}
+
+<section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img"
+         style="background-image: url(../static/images/bg_2.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row d-md-flex justify-content-end">
+            <div class="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate">
+                <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
+                <form action="{% url 'contact' %}" method="Post" class="appointment">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" name="message-name" placeholder="Your Name" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" name="message-email"  placeholder="Email" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" cols="30" id="" name="message" placeholder="Message"
+                                          rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="btn btn-primary py-3 px-4" type="submit" value="Send message">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% endblock content %}

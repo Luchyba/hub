@@ -1,0 +1,357 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5"
+         style="background-image: url('../static/images/g9.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate mb-5 text-center">
+                <h1 class="mb-3 bread">Services</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i
+                        class="fa fa-chevron-right"></i></a></span> <span>Services <i
+                        class="fa fa-chevron-right"></i></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                <span class="subheading">Programmes</span>
+                <h2 class="mb-2">Our programmes &amp; Offers</h2>
+            </div>
+        </div>
+
+        <!--        <div class="row d-flex justify-content-center">-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-family"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Family Task</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--                  <p><a href="#" class="btn btn-primary py-3 px-4">Become a Mentor</a></p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--                 <div class="col-md-3 d-flex ftco-animate">-->
+        <!--          	<div class="blog-entry justify-content-end">-->
+        <!--              <div class="text">-->
+        <!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_2.jpg');">-->
+        <!--	              </a>-->
+        <!--	              <div class="meta mb-1">-->
+        <!--                  <div><a href="#">April 12, 2020</a></div>-->
+        <!--                  <div><a href="#">Admin</a></div>-->
+        <!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+        <!--                </div>-->
+        <!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+
+        <!--                 <div class="col-md-3 d-flex ftco-animate">-->
+        <!--          	<div class="blog-entry justify-content-end">-->
+        <!--              <div class="text">-->
+        <!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_2.jpg');">-->
+        <!--	              </a>-->
+        <!--	              <div class="meta mb-1">-->
+        <!--                  <div><a href="#">April 12, 2020</a></div>-->
+        <!--                  <div><a href="#">Admin</a></div>-->
+        <!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+        <!--                </div>-->
+        <!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-research"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Online Research</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-checklist"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Management Task</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-project"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Project Management</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-document"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Writing Editing</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-language"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Multiligual Services</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-call-center"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Customer Service</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-process"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Executive Admin</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-planner"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Event Planning</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-booking"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Book Keeping</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-employee"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Personal Task</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-paste"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Organize Data</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-web-design"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Web Design</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+        <!--            <div class="media block-6 services d-block text-center">-->
+        <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-data"></span></div>-->
+        <!--              <div class="media-body py-md-4">-->
+        <!--                <h3>Web Development</h3>-->
+        <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+    </div>
+</section>
+
+<section class="ftco-appointment ftco-section2 ftco-no-pt ftco-no-pb img">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+                 style="background-image: url(../static/images/bg_13.jpg);">
+            </div>
+            <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+                <div class="heading-section">
+                    <h2 class="mb-4">TECHNEG INCUBATOR.</h2>
+
+                    <p>TECHNEG Business incubation is a private, entrepreneurial, economic and social development
+                        process designed to nurture businesses from idea generation to start-up companies and, through a
+                        comprehensive business support program, help them establish and accelerate their growth and
+                        success.</p>
+                    <p><a class="btn btn-primary py-3 px-4" href="{% url 'incubate' %}">Learn more</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="ftco-section2">
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+                     style="background-image: url(../static/images/g9.jpg);">
+                </div>
+                <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+                    <div class="heading-section">
+                        <h2 class="mb-4">IT4GH.</h2>
+
+                        <p>It a IT training programme designed based on local needs. We provide basic IT skills for
+                            youth in various level in the Ghanaian communities especially the rural communities. </p>
+                        <p><a class="btn btn-primary py-3 px-4" href="{% url 'it4gh' %}">Connect with us</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+
+<section class="ftco-section2">
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+                     style="background-image: url(../static/images/g2.jpg);">
+                </div>
+                <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+                    <div class="heading-section">
+                        <h2 class="mb-4">Techneg STEM.</h2>
+
+                        <p>Techneg Arduino training is a STEM program created by Techneg to help schools introduce basic
+                            computer programming and electronics using the Arduino platform. The purpose of this
+                            training is to empower youth through innovation, science, and technology. </p>
+                        <p><a class="btn btn-primary py-3 px-4" href="#">Apply</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+<section class="ftco-section2">
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+                     style="background-image: url(../static/images/f.jpg);">
+                </div>
+                <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+                    <div class="heading-section">
+                        <h2 class="mb-4">AI / IOT.</h2>
+
+                        <p>TECHNEG is a multi-purpose technology training center located in the Upper West Region of
+                            Ghana. TECHNEG seeks to address the gap in providing skills for next generation workers for
+                            Africa.</p>
+                        <!--	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>-->
+                        <p><a class="btn btn-primary py-3 px-4" href="#">Read more.</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+
+<!--    <section class="ftco-section ftco-fullwidth goto-here">-->
+<!--    	<div class="overlay"></div>-->
+<!--    	<div class="container">-->
+<!--    		<div class="row justify-content-center">-->
+<!--          <div class="col-md-12 heading-section text-center ftco-animate mb-5">-->
+<!--          	<span class="subheading">Why Choose Us?</span>-->
+<!--            <h2 class="mb-2">Top Reason Why We Need to Get Virtual Assistant</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    	</div>-->
+<!--    	<div class="container-fluid px-0">-->
+<!--    		<div class="row d-sm-flex text-wrapper align-items-stretch">-->
+<!--					<div class="one-half mb-md-0 mb-4 img d-flex align-self-stretch" style="background-image: url('../static/images/about.jpg');"></div>-->
+<!--					<div class="one-half half-text d-flex justify-content-end align-items-center">-->
+<!--						<div class="text-inner pt-md-5 pl-md-5">-->
+<!--							<div class="row d-flex">-->
+<!--			          <div class="col-md-12 d-flex align-self-stretch ftco-animate">-->
+<!--			            <div class="media block-6 services-wrap d-flex">-->
+<!--			            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-team"></span></div>-->
+<!--			              <div class="media-body pl-4">-->
+<!--			                <h3>Get decided business results</h3>-->
+<!--			                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--			              </div>-->
+<!--			            </div>      -->
+<!--			          </div>-->
+<!--			          <div class="col-md-12 d-flex align-self-stretch ftco-animate">-->
+<!--			            <div class="media block-6 services-wrap d-flex">-->
+<!--			            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-loan"></span></div>-->
+<!--			              <div class="media-body pl-4">-->
+<!--			                <h3>Save time with qualified assistants</h3>-->
+<!--			                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--			              </div>-->
+<!--			            </div>      -->
+<!--			          </div>-->
+<!--			          <div class="col-md-12 d-flex align-self-stretch ftco-animate">-->
+<!--			            <div class="media block-6 services-wrap d-flex">-->
+<!--			            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-routine"></span></div>-->
+<!--			              <div class="media-body pl-4">-->
+<!--			                <h3>Work &amp; Life Balance</h3>-->
+<!--			                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--			              </div>-->
+<!--			            </div>      -->
+<!--			          </div>-->
+<!--			          <div class="col-md-12 d-flex align-self-stretch ftco-animate">-->
+<!--			            <div class="media block-6 services-wrap d-flex">-->
+<!--			            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-fast"></span></div>-->
+<!--			              <div class="media-body pl-4">-->
+<!--			                <h3>Quick formulate your all plans</h3>-->
+<!--			                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--			              </div>-->
+<!--			            </div>      -->
+<!--			          </div>-->
+<!--			        </div>-->
+<!--            </div>-->
+<!--					</div>-->
+<!--    		</div>-->
+<!--    	</div>-->
+<!--    </section>-->
+
+
+{% endblock content %}

@@ -1,0 +1,611 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero-wrap" data-stellar-background-ratio="0.5" style="background-image: url('../static/images/bg_13.jpg');">
+    <div class="overlay"></div>
+    <div class="overlay-2"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+            <div class="col-md-7 ftco-animate d-flex align-items-end">
+                <div class="text w-100">
+                    <h1 class="mb-4">Technology For the Next Generation.(TECHNEG)</h1>
+                    <p class="mb-4">The Hub of Technological &amp; Entrepreneurial Innovation </p>
+                    <p><a class="btn btn-primary py-3 px-" href="{% url 'volunteer' %}">Join TECHNEG</a></p>
+                    <p><a class="btn btn-primary py-3 px-4" href="{% url 'volunteer' %}">Become a Mentor</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mouse">
+        <a class="mouse-icon" href="#">
+            <div class="mouse-wheel"><span class="fa fa-chevron-down"></span></div>
+        </a>
+    </div>
+</div>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                <span class="subheading">TECHNEG Services</span>
+                <h2 class="mb-2">Our Services &amp; Offers</h2>
+            </div>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center"><span
+                            class="flaticon-family"></span></div>
+                    <div class="media-body py-md-4">
+                        <h3>Child Literacy</h3>
+                        <p>We build enabling environment for the growth of Child Literacy; Creating Linkages, Policy
+                            Advocacy, Digital Literacy and Development in growth of Children.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center"><span
+                            class="flaticon-research"></span></div>
+                    <div class="media-body py-md-4">
+                        <h3>IT Training</h3>
+                        <p>We provide a wide range of IT training to help bring Technological Knowledge to the door step
+                            of everyone</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center"><span
+                            class="flaticon-checklist"></span></div>
+                    <div class="media-body py-md-4">
+                        <h3>Ecosystem Strengthening</h3>
+                        <p>We build enabling environment for the growth of entrepreneurship; Creating Linkages, Policy
+                            Advocacy, Hub Setup and Development in growing ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center"><span
+                            class="flaticon-project"></span></div>
+                    <div class="media-body py-md-4">
+                        <h3>Startup Development</h3>
+                        <p>Our programs are centered around the growth of the individual entrepreneur. We are also
+                            focused on capacity building, coaching/mentoring and broad spectrum incubation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+            <!--            <div class="media block-6 services d-block text-center">-->
+            <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-document"></span></div>-->
+            <!--              <div class="media-body py-md-4">-->
+            <!--                <h3>Writing Editing</h3>-->
+            <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+
+            <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+            <!--            <div class="media block-6 services d-block text-center">-->
+            <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-language"></span></div>-->
+            <!--              <div class="media-body py-md-4">-->
+            <!--                <h3>Multiligual Services</h3>-->
+            <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+
+            <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+            <!--            <div class="media block-6 services d-block text-center">-->
+            <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-call-center"></span></div>-->
+            <!--              <div class="media-body py-md-4">-->
+            <!--                <h3>Customer Service</h3>-->
+            <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+
+            <!--          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">-->
+            <!--            <div class="media block-6 services d-block text-center">-->
+            <!--            	<div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-process"></span></div>-->
+            <!--              <div class="media-body py-md-4">-->
+            <!--                <h3>Executive Admin</h3>-->
+            <!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
+                 style="background-image: url(../static/images/v3.jpg);">
+            </div>
+            <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+                <div class="heading-section">
+                    <h2 class="mb-4">TECHNEG is not your average Tech Community.</h2>
+
+                    <p>TECHNEG is a multi-purpose technology training center located in the Upper West Region of Ghana.
+                        TECHNEG seeks to address the gap in providing skills for next generation workers for Africa.</p>
+                    <!--	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>-->
+                </div>
+
+                <div class="row progress-circle my-5">
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-white">
+                            <!-- Progress bar 1 -->
+                            <div class="progress mx-auto" data-value='30'>
+					          <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="h2 font-weight-bold">50<sup class="small">%</sup></div>
+                                </div>
+                            </div>
+
+                            <h2 class="h5 font-weight-bold text-center mt-3">Startups</h2>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-white">
+                            <!-- Progress bar 1 -->
+                            <div class="progress mx-auto" data-value='75'>
+					          <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+                                </div>
+                            </div>
+
+                            <h2 class="h5 font-weight-bold text-center mt-3">Employment Support</h2>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-white">
+                            <!-- Progress bar 1 -->
+                            <div class="progress mx-auto" data-value='75'>
+					          <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+                                </div>
+                            </div>
+
+                            <h2 class="h5 font-weight-bold text-center mt-3">Tech Solution</h2>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    {% comment %} <div class="col-lg-6 mb-4">
+                        <div class="bg-white">
+                            <!-- Progress bar 1 -->
+                            <div class="progress mx-auto" data-value='75'>
+					          <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+					          </span>
+                                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                    <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+                                </div>
+                            </div>
+
+                            <h2 class="h5 font-weight-bold text-center mt-3">Virtual Assistant Employee</h2>
+                            <!-- END -->
+                        </div>
+                    </div> {% endcomment %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section testimony-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <span class="subheading">Testimonial</span>
+                <h2 class="mb-3">Happy Clients</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel ftco-owl">
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <p class="mb-4">Thanks to TECHNEG, I have been able to start my Multi purpose Liquid Soap company which currently employs over a 20 women. I am a product of their Business Incubation program.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                         style="background-image: url(../static/images/v.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Viclina</p>
+                                        <span class="position">Participant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
+                                    and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                         style="background-image: url(../static/images/p.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Palba </p>
+                                        <span class="position">Participant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
+                                    and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                         style="background-image: url(../static/images/es.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Esther</p>
+                                        <span class="position">Participant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                    {% comment %} <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
+                                    and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                         style="background-image: url(../static/images/os.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Oswald</p>
+                                        <span class="position">Mentor</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                    {% comment %} <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
+                                    and Consonantia, there live the blind texts.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                         style="background-image: url(../static/images/person_2.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Roger Scott</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pb bg-light">
+    <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">Tech Solutions</span>
+                <h2>How we do it</h2>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                <div class="services-2">
+                    <span class="number">01</span>
+                    <h2>Hardware <br> Software</h2>
+                    <div class="text">
+                        <p>We provide Hardware and software solution to General public</p>
+                        <span class="icon flaticon-loan"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                <div class="services-2 active">
+                    <span class="number">02</span>
+                    <h2>Skill <br>Out <br> Sourcing</h2>
+                    <div class="text">
+                        <p>We produce .</p>
+                        <span class="icon flaticon-document"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                <div class="services-2">
+                    <span class="number">03</span>
+                    <h2>Schedule <br>A Meeting</h2>
+                    <div class="text">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="icon flaticon-fast"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--		<section class="ftco-section bg-light">-->
+<!--    	<div class="container">-->
+<!--    		<div class="row justify-content-center pb-5 mb-3">-->
+<!--          <div class="col-md-7 heading-section text-center ftco-animate">-->
+<!--          	<span class="subheading">Price &amp; Plans</span>-->
+<!--            <h2>Affordable Packages</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    		<div class="row">-->
+<!--    			<div class="col-md-6 col-lg-3 ftco-animate">-->
+<!--	          <div class="block-7">-->
+<!--	            <div class="text-center">-->
+<!--		            <span class="price"><sup>$</sup> <span class="number">49</span> <sub>/mo</sub></span>-->
+<!--		            <span class="excerpt d-block">Small Plan</span>-->
+<!--		            <ul class="pricing-text mb-5">-->
+<!--		              <li><span class="fa fa-check mr-2"></span>Upto 50 hours Monthly</li>-->
+<!--		              <li><span class="fa fa-check mr-2"></span>2 Assistants available</li>-->
+<!--		            </ul>-->
+
+<!--		            <a href="#" class="btn btn-primary d-block px-2 py-2">Get Started</a>-->
+<!--	            </div>-->
+<!--	          </div>-->
+<!--	        </div>-->
+<!--	        <div class="col-md-6 col-lg-3 ftco-animate">-->
+<!--	          <div class="block-7">-->
+<!--	            <div class="text-center">-->
+<!--		            <span class="price"><sup>$</sup> <span class="number">79</span> <sub>/mo</sub></span>-->
+<!--		            <span class="excerpt d-block">Startup Plan</span>-->
+<!--		            <ul class="pricing-text mb-5">-->
+<!--		              <li><span class="fa fa-check mr-2"></span>Upto 50 hours Monthly</li>-->
+<!--		              <li><span class="fa fa-check mr-2"></span>2 Assistants available</li>-->
+<!--		            </ul>-->
+
+<!--		            <a href="#" class="btn btn-primary d-block px-2 py-2">Get Started</a>-->
+<!--	            </div>-->
+<!--	          </div>-->
+<!--	        </div>-->
+<!--	        <div class="col-md-6 col-lg-3 ftco-animate">-->
+<!--	          <div class="block-7">-->
+<!--	            <div class="text-center">-->
+<!--		            <span class="price"><sup>$</sup> <span class="number">109</span> <sub>/mo</sub></span>-->
+<!--		            <span class="excerpt d-block">Medium Plan</span>-->
+<!--		            <ul class="pricing-text mb-5">-->
+<!--		              <li><span class="fa fa-check mr-2"></span>Upto 50 hours Monthly</li>-->
+<!--		              <li><span class="fa fa-check mr-2"></span>2 Assistants available</li>-->
+<!--		            </ul>-->
+
+<!--		            <a href="#" class="btn btn-primary d-block px-2 py-2">Get Started</a>-->
+<!--	            </div>-->
+<!--	          </div>-->
+<!--	        </div>-->
+<!--	        <div class="col-md-6 col-lg-3 ftco-animate">-->
+<!--	          <div class="block-7">-->
+<!--	            <div class="text-center">-->
+<!--		            <span class="price"><sup>$</sup> <span class="number">149</span> <sub>/mo</sub></span>-->
+<!--		            <span class="excerpt d-block">Commercial Plan</span>-->
+<!--		            <ul class="pricing-text mb-5">-->
+<!--		              <li><span class="fa fa-check mr-2"></span>Upto 50 hours Monthly</li>-->
+<!--		              <li><span class="fa fa-check mr-2"></span>2 Assistants available</li>-->
+<!--		            </ul>-->
+
+<!--		            <a href="#" class="btn btn-primary d-block px-2 py-2">Get Started</a>-->
+<!--	            </div>-->
+<!--	          </div>-->
+<!--	        </div>-->
+<!--	      </div>-->
+<!--    	</div>-->
+<!--    </section>-->
+
+
+<!--    <section class="ftco-section">-->
+<!--      <div class="container">-->
+<!--        <div class="row justify-content-center mb-5">-->
+<!--          <div class="col-md-7 heading-section text-center ftco-animate">-->
+<!--          	<span class="subheading">Blog</span>-->
+<!--            <h2>Recent Blog</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="row d-flex">-->
+<!--          <div class="col-md-3 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry justify-content-end">-->
+<!--              <div class="text">-->
+<!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_1.jpg');">-->
+<!--	              </a>-->
+<!--	              <div class="meta mb-1">-->
+<!--                  <div><a href="#">April 12, 2020</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-3 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry justify-content-end">-->
+<!--              <div class="text">-->
+<!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_2.jpg');">-->
+<!--	              </a>-->
+<!--	              <div class="meta mb-1">-->
+<!--                  <div><a href="#">April 12, 2020</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-3 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry justify-content-end">-->
+<!--              <div class="text">-->
+<!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_3.jpg');">-->
+<!--	              </a>-->
+<!--	              <div class="meta mb-1">-->
+<!--                  <div><a href="#">April 12, 2020</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-3 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry justify-content-end">-->
+<!--              <div class="text">-->
+<!--              	<a href="blog-single.html" class="block-20 img" style="background-image: url('../static/images/image_4.jpg');">-->
+<!--	              </a>-->
+<!--	              <div class="meta mb-1">-->
+<!--                  <div><a href="#">April 12, 2020</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+
+<section class="ftco-section testimony-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <span class="subheading">Partners</span>
+                <h2 class="mb-3">Awesome Partners</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel ftco-owl">
+                    <!--              <div class="item">-->
+                    <!--                <div class="testimony-wrap py-4">-->
+                    <!--                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>-->
+                    <!--                  <div class="text">-->
+                    <!--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                    <!--                    <div class="d-flex align-items-center">-->
+                    <!--                    	<div class="user-img" style="background-image: url(../static/images/person_1.jpg)"></div>-->
+                    <!--                    	<div class="pl-3">-->
+                    <!--		                    <p class="name">Roger Scott</p>-->
+                    <!--		                    <span class="position">Marketing Manager</span>-->
+                    <!--		                  </div>-->
+                    <!--	                  </div>-->
+                    <!--                  </div>-->
+                    <!--                </div>-->
+                    <!--              </div>-->
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <div class="d-flex align-items-center">
+                                    <a class="block-20 img" href="blog-single.html"
+                                       style="background-image: url('../static/images/p_4.jpg');">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <div class="d-flex align-items-center">
+                                    <a class="block-20 img" href="blog-single.html"
+                                       style="background-image: url('../static/images/p_1.png');">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="text">
+                                <div class="d-flex align-items-center">
+                                    <a class="block-20 img" href="blog-single.html"
+                                       style="background-image: url('../static/images/p_2.jpg');">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-quote-left"></div>
+                            <div class="block-20 img">
+                                <div class="d-flex align-items-center">
+                                    <a class="block-20 img" href="blog-single.html"
+                                       style="background-image: url('../static/images/p_3.jpg');">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
