@@ -9212,7 +9212,7 @@ textarea.form-control {
 .img-2,
 .blog-img,
 .user-img {
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center; }
 
