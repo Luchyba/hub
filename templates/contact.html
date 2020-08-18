@@ -2,20 +2,17 @@
 
 {% block content %}
 
-<section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5"
-         style="background-image: url('../static/images/bg_2.jpg');">
-    <div class="overlay"></div>
-    <div class="container">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
-            <div class="col-md-9 ftco-animate mb-5 text-center">
-                <h1 class="mb-3 bread">Contact Us</h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i
-                        class="fa fa-chevron-right"></i></a></span> <span>Contact  <i
-                        class="fa fa-chevron-right"></i></span></p>
-            </div>
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+            <h1 class="mb-3 bread">Contact us</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
 {% if message_name %}
 <center>
@@ -25,12 +22,55 @@
 <br/><br/><br/>
  {% else %}
 
-<section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img"
-         style="background-image: url(../static/images/bg_2.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row d-md-flex justify-content-end">
-            <div class="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate">
+    <section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12">
+						<div class="wrapper px-md-4">
+							<div class="row mb-5">
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Address:</span> Wa, Kaleo, Upper West Region, Ghana.</p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Phone:</span> <a href="tel://00233206851667">+ 233206851667</a></p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Email:</span> <a href="mailto:techneggh@gmail.com">techneggh@gmail.com</a></p>
+					          </div>
+				          </div>
+								</div>
+								<div class="col-md-3">
+									<div class="dbox w-100 text-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text">
+					            <p><span>Website</span> <a href="techneg.pythonanywhere.com">techneg.pythonanywhere.com</a></p>
+					          </div>
+				          </div>
+								</div>
+							</div>
+							<div class="row no-gutters">
+								<div class="col-md-7">
                 <h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
                 <form action="{% url 'contact' %}" method="Post" class="appointment">
                 {% csrf_token %}
@@ -45,6 +85,11 @@
                                 <input class="form-control" name="message-email"  placeholder="Email" type="text">
                             </div>
                         </div>
+                                                <div class="col-md-12">
+													<div class="form-group">
+														<input type="text" class="form-control" name="subject" id="" placeholder="Subject">
+													</div>
+												</div>
                         
                         <div class="col-md-12">
                             <div class="form-group">
@@ -60,9 +105,19 @@
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
-</section>
-{% endif %}
+								</div>
+								<div class="col-md-5 d-flex align-items-stretch">
+									<div id="map" class="map"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+
+
+
+{% endif %}
 {% endblock content %}

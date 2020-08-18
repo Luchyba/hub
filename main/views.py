@@ -45,16 +45,18 @@ def it4gh(request):
 
 def ccoc(request):
     return render(request, 'ccoc.html',)
-    
+
 def contact(request):
     if request.method == "POST":
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
+        message_subject = request.POST['subject']
         message = request.POST['message']
         
         # send mail
         send_mail(
-            message_name, # subject
+            message_name, #name
+            message_subject, # subject
             message, # message
             message_email, #from
             ['techneggh@gmail.com'] #to Email
@@ -63,3 +65,22 @@ def contact(request):
         return render(request, 'contact.html', {'message_name': message_name } )
     else:
         return render(request, 'contact.html',{} )
+
+    
+# def cont(request):
+#     if request.method == "POST":
+#         message_name = request.POST['message-name']
+#         message_email = request.POST['message-email']
+#         message = request.POST['message']
+        
+#         # send mail
+#         send_mail(
+#             message_name, # subject
+#             message, # message
+#             message_email, #from
+#             ['techneggh@gmail.com'] #to Email
+#             )
+
+#         return render(request, 'cont.html', {'message_name': message_name } )
+#     else:
+#         return render(request, 'cont.html',{} )
