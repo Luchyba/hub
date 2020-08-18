@@ -55,7 +55,6 @@ def contact(request):
         
         # send mail
         send_mail(
-            message_name, #name
             message_subject, # subject
             message, # message
             message_email, #from
